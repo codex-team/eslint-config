@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-codex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:codex-team/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "*"
+  },
+  "dependencies": {
+    "eslint-config-standart": "^0.2.0"
+  }
+}
