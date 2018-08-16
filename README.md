@@ -17,7 +17,7 @@ yarn add -D eslint
 
 Add `.eslintrc` file to your project`s root if you don't have it.
 
-Add there the `extends`section:
+Add there the `extends` section:
 ```
 {
   "extends": [
