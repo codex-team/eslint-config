@@ -5,7 +5,7 @@ Add package to your dev-dependencies using npm or yarn:
 ```
 npm install --save-dev github:codex-team/eslint-config
 
-yarn add -D github:codex-team/config
+yarn add -D github:codex-team/eslint-config
 ```
 
 Add eslint to your dev-dependencies
