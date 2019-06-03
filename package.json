@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codex",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "repository": "github:codex-team/eslint-config",
   "license": "MIT",
@@ -8,11 +8,11 @@
     "eslint": ">= 5.3.0"
   },
   "dependencies": {
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest"
   },
   "devDependencies": {
     "eslint": "^5.16.0"
