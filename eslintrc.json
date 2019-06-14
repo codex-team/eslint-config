@@ -71,8 +71,14 @@
         "ClassDeclaration": true,
         "ArrowFunctionExpression": false
       }
-    }]
+    }],
 
+    "prefer-const": ["error", {
+      "destructuring": "all",
+      "ignoreReadBeforeAssign": true
+    } ],
+
+    "multiline-comment-style": ["error", "starred-block"]
   },
   "globals":{
     "document": true,
