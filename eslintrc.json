@@ -1,8 +1,9 @@
 {
   "extends": [
-    "standard"
+    "standard",
+    "plugin:@typescript-eslint/recommended"
   ],
-
+  "parser":  "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -12,7 +13,6 @@
     }
   },
   "rules": {
-
     "arrow-spacing": [2, {
       "before": true,
       "after": true
@@ -78,7 +78,16 @@
       "ignoreReadBeforeAssign": true
     } ],
 
-    "multiline-comment-style": ["error", "starred-block"]
+    "multiline-comment-style": ["error", "starred-block"],
+    "no-console": 0,
+    "one-var": 0,
+    "sort-keys": 0,
+    "dot-notation": 0,
+    "no-empty": 0,
+
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-namespace": 0
   },
   "globals":{
     "document": true,
