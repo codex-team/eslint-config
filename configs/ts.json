@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "@typescript-eslint/eslint-plugin"
+    "@typescript-eslint"
   ],
   "extends": [
     "plugin:@typescript-eslint/recommended"
