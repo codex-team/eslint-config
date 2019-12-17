@@ -1,9 +1,8 @@
 {
   "extends": [
     "standard",
-    "plugin:@typescript-eslint/recommended"
+    "./configs/ts.json"
   ],
-  "parser":  "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -25,22 +24,37 @@
     "no-shadow": 2,
     "no-undef-init": 2,
     "no-undef": 2,
-    "no-unused-vars": 1,
 
     "array-bracket-spacing": [2, "never", {
       "singleValue": true,
       "objectsInArrays": true,
       "arraysInArrays": true
     }],
-    "quotes": [1, "single", "avoid-escape"],
+    "quotes": [1, "single", {
+      "avoidEscape":  true,
+      "allowTemplateLiterals": true
+    }],
     "eqeqeq": 0,
     "brace-style": [2, "1tbs"],
+    "object-property-newline": [2, {
+      "allowAllPropertiesOnSameLine": false
+    }],
+    "newline-per-chained-call": 2,
+    "curly": [2, "all"],
 
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+    }],
     "comma-spacing": [2, {
       "before": false,
       "after": true
     }],
     "comma-style": [2, "last"],
+
     "eol-last": 0,
     "no-nested-ternary": 1,
     "no-trailing-spaces": 2,
@@ -83,11 +97,7 @@
     "one-var": 0,
     "sort-keys": 0,
     "dot-notation": 0,
-    "no-empty": 0,
-
-    "@typescript-eslint/interface-name-prefix": 0,
-    "@typescript-eslint/no-empty-interface": 0,
-    "@typescript-eslint/no-namespace": 0
+    "no-empty": 0
   },
   "globals":{
     "document": true,
