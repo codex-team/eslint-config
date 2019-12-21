@@ -5,7 +5,7 @@
   "repository": "github:codex-team/eslint-config",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint test/index.ts -c ./eslintrc.json"
+    "lint": "eslint test/* -c ./eslintrc.json"
   },
   "peerDependencies": {
     "eslint": ">= 5.3.0",
