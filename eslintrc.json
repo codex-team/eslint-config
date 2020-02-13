@@ -77,7 +77,34 @@
     "camelcase": [2, {
       "properties": "always"
     }],
-    "newline-after-var": [1, "always"],
+    /**
+     * Require blank lines between some statements:
+     * - before return statement
+     * - after variables declaration
+     * - after directive prologues
+     */
+    "newline-after-var": 0,
+    "padding-line-between-statements": [1, {
+      "blankLine": "always",
+      "prev": "*",
+      "next": "return"
+    }, {
+      "blankLine": "always",
+      "prev": ["const", "let", "var"],
+      "next": "*"
+    }, {
+      "blankLine": "any",
+      "prev": ["const", "let", "var"],
+      "next": ["const", "let", "var"]
+    }, {
+      "blankLine": "always",
+      "prev": "directive",
+      "next": "*"
+    }, {
+      "blankLine": "any",
+      "prev": "directive",
+      "next": "directive"
+    }],
     "require-jsdoc": ["error", {
       "require": {
         "FunctionDeclaration": true,
@@ -85,6 +112,11 @@
         "ClassDeclaration": true,
         "ArrowFunctionExpression": false
       }
+    }],
+
+    "valid-jsdoc": [1, {
+      "matchDescription": ".+",
+      "requireReturnDescription": false,
     }],
 
     "prefer-const": ["error", {
