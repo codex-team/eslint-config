@@ -77,12 +77,6 @@
     "camelcase": [2, {
       "properties": "always"
     }],
-    /**
-     * Require blank lines between some statements:
-     * - before return statement
-     * - after variables declaration
-     * - after directive prologues
-     */
     "newline-after-var": 0,
     "padding-line-between-statements": [1, {
       "blankLine": "always",
