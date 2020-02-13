@@ -21,6 +21,7 @@
             "constructors": "no-public"
           }
         }],
+        "@typescript-eslint/explicit-function-return-type": ["error"],
         "@typescript-eslint/member-ordering": [2, {
           "default": [
             "signature",

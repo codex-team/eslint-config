@@ -78,27 +78,34 @@
       "properties": "always"
     }],
     "newline-after-var": 0,
-    "padding-line-between-statements": [1, {
-      "blankLine": "always",
-      "prev": "*",
-      "next": "return"
-    }, {
-      "blankLine": "always",
-      "prev": ["const", "let", "var"],
-      "next": "*"
-    }, {
-      "blankLine": "any",
-      "prev": ["const", "let", "var"],
-      "next": ["const", "let", "var"]
-    }, {
-      "blankLine": "always",
-      "prev": "directive",
-      "next": "*"
-    }, {
-      "blankLine": "any",
-      "prev": "directive",
-      "next": "directive"
-    }],
+    "padding-line-between-statements": [1,
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": ["const", "let", "var"],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+      {
+        "blankLine": "always",
+        "prev": "directive",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "directive",
+        "next": "directive"
+      }
+    ],
+
     "require-jsdoc": ["error", {
       "require": {
         "FunctionDeclaration": true,
@@ -111,6 +118,9 @@
     "valid-jsdoc": [1, {
       "matchDescription": ".+",
       "requireReturnDescription": false,
+      "requireReturn": false,
+      "requireReturnType": false,
+      "requireParamDescription": true
     }],
 
     "prefer-const": ["error", {

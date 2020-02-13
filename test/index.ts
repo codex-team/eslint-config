@@ -42,7 +42,7 @@ class User {
   /**
    * Private method should be placed below the public
    */
-  private mute(): { a: number; b: string } {
+  private mute(aa): { a: number; b: string } {
     /**
      * object-property-newline
      * comma-dangle
