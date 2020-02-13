@@ -41,6 +41,7 @@ class User {
 
   /**
    * Private method should be placed below the public
+   * @param aa
    */
   private mute(aa): { a: number; b: string } {
     /**

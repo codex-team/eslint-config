@@ -120,7 +120,8 @@
       "requireReturnDescription": false,
       "requireReturn": false,
       "requireReturnType": false,
-      "requireParamDescription": true
+      "requireParamDescription": true,
+      "requireParamType": false
     }],
 
     "prefer-const": ["error", {
