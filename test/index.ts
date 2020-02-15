@@ -40,6 +40,16 @@ class User {
   }
 
   /**
+   * @param {string} eventId
+   * @return {string}
+   */
+  async getEventLastRepetition(eventId) {
+
+    return 'aa';
+  }
+
+
+  /**
    * Private method should be placed below the public
    * @param aa
    */
