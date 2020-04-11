@@ -21,9 +21,8 @@
             "constructors": "no-public"
           }
         }],
-        "valid-jsdoc": [1, {
-          "requireParamType": false
-        }],
+        "jsdoc/require-param-type": 0,
+        "jsdoc/require-returns": 0,
         "@typescript-eslint/explicit-function-return-type": ["error"],
         "@typescript-eslint/no-var-requires": ["warn"],
         "@typescript-eslint/no-use-before-define": ["warn"],

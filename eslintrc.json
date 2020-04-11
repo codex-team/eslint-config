@@ -3,34 +3,5 @@
     "standard",
     "./configs/common.json",
     "./configs/ts.json"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "classes": true,
-      "jsx": true
-    }
-  },
-  "globals":{
-    "document": true,
-    "module": true,
-    "require": true,
-    "window": true,
-    "console" : true,
-    "CustomEvent": true,
-    "codex": true,
-    "VERSION" : true,
-    "Promise" : true,
-    "MutationObserver": true,
-    "FormData": true,
-    "XMLHttpRequest": true,
-    "ActiveXObject": true,
-    "FileReader": true,
-    "logger": true,
-    "global": true,
-    "app": true,
-    "process": true,
-    "__dirname": true
-  }
+  ]
 }

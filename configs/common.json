@@ -1,7 +1,18 @@
 {
-  "extends": [
-    "standard"
+  "plugins": [
+    "jsdoc"
   ],
+  "extends": [
+    "plugin:jsdoc/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "classes": true,
+      "jsx": true
+    }
+  },
   "rules": {
     "arrow-spacing": [
       "warn",
@@ -162,28 +173,6 @@
         "next": "directive"
       }
     ],
-    "require-jsdoc": [
-      "error",
-      {
-        "require": {
-          "FunctionDeclaration": true,
-          "MethodDefinition": true,
-          "ClassDeclaration": true,
-          "ArrowFunctionExpression": false
-        }
-      }
-    ],
-    "valid-jsdoc": [
-      1,
-      {
-        "matchDescription": ".+",
-        "requireReturnDescription": false,
-        "requireReturn": false,
-        "requireReturnType": false,
-        "requireParamDescription": true,
-        "requireParamType": false
-      }
-    ],
     "prefer-const": [
       "warn",
       {
@@ -195,10 +184,43 @@
       "warn",
       "separate-lines"
     ],
+    "jsdoc/require-jsdoc": [1, {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": false
+      }
+    }],
     "no-console": 0,
     "one-var": 0,
     "sort-keys": 0,
     "dot-notation": 0,
     "no-empty": 0
+  },
+  "globals":{
+    "document": true,
+    "module": true,
+    "require": true,
+    "window": true,
+    "console" : true,
+    "CustomEvent": true,
+    "codex": true,
+    "VERSION" : true,
+    "Promise" : true,
+    "MutationObserver": true,
+    "FormData": true,
+    "XMLHttpRequest": true,
+    "Proxy": true,
+    "DocumentFragment": true,
+    "Symbol": true,
+    "setTimeout": true,
+    "Map": true,
+    "FileReader": true,
+    "logger": true,
+    "global": true,
+    "app": true,
+    "process": true,
+    "__dirname": true
   }
 }
