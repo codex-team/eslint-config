@@ -5,17 +5,9 @@
 Add package to your dev-dependencies using npm or yarn:
 
 ```bash
-$ npm i -D github:codex-team/eslint-config
+$ npm i -D github:codex-team/eslint-config eslint
 
-$ yarn add -D github:codex-team/eslint-config
-```
-
-Add eslint to your dev-dependencies:
-
-```bash
-$ npm i -D eslint
-
-$ yarn add -D eslint
+$ yarn add -D github:codex-team/eslint-config eslint
 ```
 
 ## Usage
@@ -35,3 +27,4 @@ Then add the `extends` section to there:
   ]
 }
 ```
+
