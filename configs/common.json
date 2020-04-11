@@ -192,6 +192,7 @@
         "ArrowFunctionExpression": false
       }
     }],
+    "jsdoc/require-returns-description": 0,
     "no-console": 0,
     "one-var": 0,
     "sort-keys": 0,
