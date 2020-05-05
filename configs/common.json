@@ -192,6 +192,8 @@
         "ArrowFunctionExpression": false
       }
     }],
+    "jsdoc/require-returns": 0,
+    "jsdoc/require-param-type": 0,
     "jsdoc/require-returns-description": 0,
     "no-console": 0,
     "one-var": 0,
