@@ -8,11 +8,16 @@
       "extends": [
         "plugin:@typescript-eslint/recommended"
       ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
       "parser": "@typescript-eslint/parser",
       "rules": {
-        "@typescript-eslint/no-unused-vars": [1, {
-          "args": "none"
+        "no-unused-vars": 0,
+        "@typescript-eslint/no-unused-vars-experimental": [1, {
+          "ignoreArgsIfArgsAfterAreUsed": true
         }],
+
         "@typescript-eslint/interface-name-prefix": 0,
         "@typescript-eslint/no-empty-interface": 0,
         "@typescript-eslint/no-namespace": 0,
