@@ -13,6 +13,9 @@
       },
       "parser": "@typescript-eslint/parser",
       "rules": {
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
+
         "no-unused-vars": 0,
         "@typescript-eslint/no-unused-vars-experimental": [1, {
           "ignoreArgsIfArgsAfterAreUsed": true
@@ -28,7 +31,9 @@
         }],
         "jsdoc/require-param-type": 0,
         "jsdoc/require-returns": 0,
-        "@typescript-eslint/explicit-function-return-type": ["error"],
+        "@typescript-eslint/explicit-function-return-type": ["warn", {
+          "allowExpressions": true
+        }],
         "@typescript-eslint/no-var-requires": ["warn"],
         "@typescript-eslint/no-use-before-define": ["warn"],
         "@typescript-eslint/member-ordering": ["error", {
