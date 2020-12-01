@@ -6,17 +6,13 @@
         "@typescript-eslint"
       ],
       "extends": [
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/all"
       ],
       "parserOptions": {
         "project": "./tsconfig.json"
       },
       "parser": "@typescript-eslint/parser",
       "rules": {
-        "semi": "off",
-        "@typescript-eslint/semi": ["error"],
-
-        "no-unused-vars": 0,
         "@typescript-eslint/no-unused-vars-experimental": [1, {
           "ignoreArgsIfArgsAfterAreUsed": true
         }],
