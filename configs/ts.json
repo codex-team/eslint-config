@@ -9,7 +9,7 @@
         "@typescript-eslint"
       ],
       "extends": [
-        "plugin:@typescript-eslint/all"
+        "plugin:@typescript-eslint/recommended"
       ],
       "parserOptions": {
         "project": "./tsconfig.json"
@@ -76,8 +76,6 @@
             ]
           }
         ],
-        "indent": "error",
-        "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-magic-numbers": [
           "error",
           {
@@ -117,21 +115,7 @@
             "selector": "enumMember",
             "format": ["PascalCase"]
           }
-        ],
-
-        "@typescript-eslint/prefer-enum-initializers": "off",
-        "@typescript-eslint/prefer-readonly-parameter-types": "off",
-        "@typescript-eslint/no-base-to-string": "off",
-        "@typescript-eslint/strict-boolean-expressions": "off",
-        "@typescript-eslint/require-await": "off",
-        "@typescript-eslint/no-type-alias": "off",
-        "@typescript-eslint/init-declarations": "off",
-        "@typescript-eslint/restrict-template-expressions": "off",
-        "@typescript-eslint/prefer-nullish-coalescing": "off",
-        "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/no-unsafe-assignment": "off",
-        "@typescript-eslint/no-unsafe-return": "off",
-        "@typescript-eslint/quotes": ["error", "single"]
+        ]
       }
     }
   ]
