@@ -122,7 +122,8 @@
         "@typescript-eslint/prefer-enum-initializers": "off",
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/no-base-to-string": "off",
-        "@typescript-eslint/strict-boolean-expressions": "off"
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/require-await": "off"
       }
     }
   ]
