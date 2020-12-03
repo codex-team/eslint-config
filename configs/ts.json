@@ -126,7 +126,10 @@
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/init-declarations": "off",
-        "@typescript-eslint/restrict-template-expressions": "off"
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/prefer-nullish-coalescing": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off"
       }
     }
   ]
