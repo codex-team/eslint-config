@@ -124,7 +124,8 @@
         "@typescript-eslint/no-base-to-string": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/require-await": "off",
-        "@typescript-eslint/no-type-alias": "off"
+        "@typescript-eslint/no-type-alias": "off",
+        "@typescript-eslint/init-declarations": "off"
       }
     }
   ]
