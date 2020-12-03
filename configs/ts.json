@@ -119,7 +119,8 @@
           }
         ],
 
-        "@typescript-eslint/prefer-enum-initializers": "off"
+        "@typescript-eslint/prefer-enum-initializers": "off",
+        "@typescript-eslint/prefer-readonly-parameter-types": "off"
       }
     }
   ]
