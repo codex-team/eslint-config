@@ -65,7 +65,10 @@
             "protected-abstract-method",
             "private-abstract-method"
           ]
-        }]
+        }],
+
+        "indent": "error",
+        "@typescript-eslint/indent": "off"
       }
     }
   ]
