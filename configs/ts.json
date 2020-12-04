@@ -115,12 +115,17 @@
           },
           {
             "selector": "enumMember",
-            "format": ["PascalCase"]
+            "format": [
+              "PascalCase"
+            ]
           }
         ],
-
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"]
+        "@typescript-eslint/no-shadow": [
+          "error"
+        ],
+        "semi": "off",
+        "@typescript-eslint/semi": "error"
       }
     }
   ]
