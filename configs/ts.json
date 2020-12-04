@@ -81,6 +81,9 @@
           {
             "ignoreArrayIndexes": true,
             "ignoreDefaultValues": true,
+            "ignoreEnums": true,
+            "ignoreNumericLiteralTypes": true,
+            "ignoreReadonlyClassProperties": true,
             "ignore": [
               0,
               1,
