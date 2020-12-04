@@ -128,7 +128,19 @@
           "error"
         ],
         "semi": "off",
-        "@typescript-eslint/semi": "error"
+        "@typescript-eslint/semi": "error",
+        "jsdoc/check-param-names": [
+          "warn",
+          {
+            "checkDestructured": false
+          }
+        ],
+        "jsdoc/require-param": [
+          "warn",
+          {
+            "checkDestructured": false
+          }
+        ]
       }
     }
   ]
