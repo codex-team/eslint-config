@@ -5,9 +5,9 @@
 Add package to your dev-dependencies using npm or yarn:
 
 ```bash
-$ npm i -D github:codex-team/eslint-config eslint
+$ npm i -D eslint-config-codex eslint
 
-$ yarn add -D github:codex-team/eslint-config eslint
+$ yarn add -D eslint-config-codex eslint
 ```
 
 ## Usage
