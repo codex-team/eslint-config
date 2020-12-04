@@ -80,6 +80,7 @@
           "error",
           {
             "ignoreArrayIndexes": true,
+            "ignoreDefaultValues": true,
             "ignore": [
               0,
               1,
@@ -87,6 +88,7 @@
             ]
           }
         ],
+        "camelcase": "off",
         "@typescript-eslint/naming-convention": [
           "error",
           {
@@ -116,6 +118,7 @@
             "format": ["PascalCase"]
           }
         ],
+
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"]
       }
