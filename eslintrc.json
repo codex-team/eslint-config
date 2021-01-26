@@ -1,7 +1,6 @@
 {
   "extends": [
     "standard",
-    "./configs/common.json",
-    "./configs/ts.json"
+    "./common.json"
   ]
 }

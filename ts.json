@@ -9,7 +9,8 @@
         "@typescript-eslint"
       ],
       "extends": [
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "./common.json"
       ],
       "parserOptions": {
         "project": "./tsconfig.json"
