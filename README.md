@@ -32,3 +32,11 @@ Then add the `extends` section to there:
 
 1. Follow instructions for JavaScript
 2. Extend from `codex/ts` instead of `codex`
+
+```json
+{
+  "extends": [
+    "codex/ts"
+  ]
+}
+```
