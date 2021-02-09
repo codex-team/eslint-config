@@ -197,7 +197,8 @@
     "one-var": 0,
     "sort-keys": 0,
     "dot-notation": 0,
-    "no-empty": 0
+    "no-empty": 0,
+    "object-curly-spacing": ["warn", "always"]
   },
   "globals":{
     "document": true,
