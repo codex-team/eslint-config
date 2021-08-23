@@ -198,7 +198,8 @@
     "sort-keys": 0,
     "dot-notation": 0,
     "no-empty": 0,
-    "object-curly-spacing": ["warn", "always"]
+    "object-curly-spacing": ["warn", "always"],
+    "keyword-spacing": ["warn"]
   },
   "globals":{
     "document": true,
