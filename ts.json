@@ -1,4 +1,8 @@
 {
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "./common.json"
+  ],
   "overrides": [
     {
       "files": [
@@ -7,10 +11,6 @@
       ],
       "plugins": [
         "@typescript-eslint"
-      ],
-      "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "./common.json"
       ],
       "parserOptions": {
         "project": "./tsconfig.json"
