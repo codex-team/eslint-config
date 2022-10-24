@@ -40,3 +40,17 @@ Then add the `extends` section to there:
   ]
 }
 ```
+
+## Troubleshooting
+
+### ESLint couldn't determine the plugin ... uniquely
+
+Since 7.x ESLint loads plugins from the location of each config file which has the `plugins` field. Resolve this issue by adding the root flag to your `.eslintrc` config
+
+```
+{
+  "root": true
+}
+```
+
+[Issue](https://github.com/codex-team/eslint-config/issues/25) | [Discussion](https://github.com/eslint/eslint/issues/13385#issuecomment-641252879)
