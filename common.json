@@ -218,6 +218,7 @@
     "DocumentFragment": true,
     "Symbol": true,
     "setTimeout": true,
+    "clearTimeout": true,
     "Map": true,
     "FileReader": true,
     "logger": true,
