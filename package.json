@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codex",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "main": "index.js",
   "repository": "github:codex-team/eslint-config",
   "license": "MIT",
