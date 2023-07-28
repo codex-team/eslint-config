@@ -199,7 +199,8 @@
     "dot-notation": 0,
     "no-empty": 0,
     "object-curly-spacing": ["warn", "always"],
-    "keyword-spacing": ["warn"]
+    "keyword-spacing": ["warn"],
+    "jsdoc/tag-lines": ["warn", "any", {"startLines": 1}]
   },
   "globals":{
     "document": true,
