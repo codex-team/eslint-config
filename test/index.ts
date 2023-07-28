@@ -1,3 +1,5 @@
+import Test from './interface';
+
 /**
  * Class description doc
  */
@@ -5,6 +7,7 @@ class User {
   public author: User = null;
   public list: Array<User>;
   public list2: User[];
+  private test: Test;
 
   /**
    * @typescript-eslint/explicit-member-accessibility option overrides constructors no-public
