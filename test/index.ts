@@ -18,6 +18,7 @@ class User {
 
   /**
    * Public method should be placed abode the private and below the constructor
+   * @param adad - ads
    */
   public hello(): void {
     console.log('hello');
