@@ -15,7 +15,7 @@ $ yarn add -D eslint-config-codex eslint
 Add `.eslintrc` file to your project's root if you don't have it.
 
 ```bash
-./node_modules/.bin/eslint init
+npm init @eslint/config
 ```
 
 Then add the `extends` section to there:
