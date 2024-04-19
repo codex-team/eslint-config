@@ -1,1 +1,3 @@
-module.exports = require('./eslintrc');
+import CodeX from './eslint.config.mjs';
+
+export default CodeX;

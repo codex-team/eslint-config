@@ -1,7 +1,7 @@
 export default interface Test {
-    test: string;
+  test: string;
 }
 
 export interface SecondTest {
-    test: string;
+  test: string;
 }

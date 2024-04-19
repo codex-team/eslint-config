@@ -1,4 +1,4 @@
-import Test from './interface';
+import type Test from './interface';
 
 /**
  * Class description doc
@@ -18,6 +18,7 @@ class User {
 
   /**
    * Public method should be placed abode the private and below the constructor
+   *
    * @param adad - ads
    */
   public hello(): void {
@@ -44,17 +45,17 @@ class User {
   }
 
   /**
-   * @param {string} eventId
-   * @return {string}
+   * @param eventId
+   * @returns
    */
   async getEventLastRepetition(eventId) {
-
     return 'aa';
   }
 
 
   /**
    * Private method should be placed below the public
+   *
    * @param aa
    */
   private mute(aa): { a: number; b: string } {
@@ -80,5 +81,17 @@ class User {
     obj.b = `adad ${obj.a}`;
 
     return obj;
+  }
+
+  /**
+   *
+   * @param value
+   */
+  strictNullCheck(value: null | string | boolean) {
+    if (!value) {
+      return true;
+    }
+
+    return false;
   }
 }
