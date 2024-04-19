@@ -23,14 +23,14 @@ export default [
         'no-duplicate-imports': 'error',
         'no-shadow': 'error',
         'no-undef-init': 'error',
-        'eqeqeq': 'error',
+        eqeqeq: 'error',
         'no-nested-ternary': 'error',
         'prefer-const': ['error', {
           destructuring: 'all',
           ignoreReadBeforeAssign: true,
-        } ],
+        }],
         'no-console': 'error',
-        'no-empty': ['error', { allowEmptyCatch: true } ],
+        'no-empty': ['error', { allowEmptyCatch: true }],
       },
     }
   ),

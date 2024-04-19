@@ -42,15 +42,15 @@ export default [
       },
       rules: {
         'jsdoc/require-jsdoc': ['error', {
-          'require': {
-            'FunctionDeclaration': true,
-            'MethodDefinition': true,
-            'ClassDeclaration': true,
-            'ArrowFunctionExpression': false,
+          require: {
+            FunctionDeclaration: true,
+            MethodDefinition: true,
+            ClassDeclaration: true,
+            ArrowFunctionExpression: false,
           },
-        } ],
+        }],
         'jsdoc/require-returns-description': 'off',
-        'jsdoc/tag-lines': ['error', 'any', { 'startLines': 1 } ],
+        'jsdoc/tag-lines': ['error', 'any', { startLines: 1 }],
       },
     }
   ),
@@ -64,15 +64,18 @@ export default [
       name: 'codex/jsdoc/typescript',
       files: [
         '**/*.ts',
+        '*.ts',
         '**/*.tsx',
+        '*.tsx',
       ],
       rules: {
         'jsdoc/check-param-names': ['error', {
           checkDestructured: false,
-        } ],
+        }],
         'jsdoc/require-param': ['error', {
           checkDestructured: false,
-        } ],
+        }],
+        'jsdoc/require-returns': 'off',
       },
     }
   ),

@@ -63,7 +63,6 @@ export default [
       '@typescript-eslint/restrict-template-expressions': 'error',
       '@typescript-eslint/triple-slash-reference': 'error',
       '@typescript-eslint/unbound-method': 'error',
-      'no-unused-vars': 'off',
 
       /**
        * Disable autofix
@@ -71,23 +70,23 @@ export default [
        */
       '@typescript-eslint/strict-boolean-expressions': 'error',
       '@typescript-eslint/no-unused-vars': ['error', {
-        'args': 'after-used',
-        'argsIgnorePattern': '^_',
-        'caughtErrorsIgnorePattern': '^_',
-        'varsIgnorePattern': '^_',
-        'destructuredArrayIgnorePattern': '^_',
-      } ],
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        destructuredArrayIgnorePattern: '^_',
+      }],
       '@typescript-eslint/explicit-member-accessibility': ['error', {
-        'overrides': {
-          'constructors': 'no-public',
+        overrides: {
+          constructors: 'no-public',
         },
-      } ],
+      }],
       '@typescript-eslint/explicit-function-return-type': ['error', {
-        'allowExpressions': true,
-      } ],
+        allowExpressions: true,
+      }],
       '@typescript-eslint/no-use-before-define': 'error',
       '@typescript-eslint/member-ordering': ['error', {
-        'default': [
+        default: [
           'signature',
           'public-static-field',
           'protected-static-field',
@@ -109,49 +108,49 @@ export default [
           'public-abstract-method',
           'protected-abstract-method',
         ],
-      } ],
+      }],
       '@typescript-eslint/no-magic-numbers': ['error', {
-        'ignoreArrayIndexes': true,
-        'ignoreDefaultValues': true,
-        'ignoreEnums': true,
-        'ignoreNumericLiteralTypes': true,
-        'ignoreReadonlyClassProperties': true,
-        'ignore': [
+        ignoreArrayIndexes: true,
+        ignoreDefaultValues: true,
+        ignoreEnums: true,
+        ignoreNumericLiteralTypes: true,
+        ignoreReadonlyClassProperties: true,
+        ignore: [
           0,
           1,
           -1,
           2,
         ],
-      } ],
-      'camelcase': 'off',
+      }],
+      camelcase: 'off',
       '@typescript-eslint/naming-convention': ['error', {
-        'selector': 'default',
-        'format': [
+        selector: 'default',
+        format: [
           'camelCase',
           'PascalCase',
           'UPPER_CASE',
         ],
-        'leadingUnderscore': 'allow',
-        'trailingUnderscore': 'allow',
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
       },
       {
-        'selector': 'typeLike',
-        'format': [
+        selector: 'typeLike',
+        format: [
           'PascalCase',
         ],
       },
       {
-        'selector': 'typeParameter',
-        'format': [
+        selector: 'typeParameter',
+        format: [
           'StrictPascalCase',
         ],
       },
       {
-        'selector': 'enumMember',
-        'format': [
+        selector: 'enumMember',
+        format: [
           'PascalCase',
         ],
-      } ],
+      }],
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
