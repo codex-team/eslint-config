@@ -21,10 +21,10 @@ yarn add -D eslint-config-codex eslint
 Add following lines to your `eslint.config.mjs`:
 
 ```js
-+ import CodeX from 'eslint-config-codex'
+import CodeX from 'eslint-config-codex'
 
 export default [
-+  ...CodeX,
+  ...CodeX,
   // your customization
 ]
 ```
@@ -35,7 +35,7 @@ Open `Code` / `Settings`, find "Open Settings (JSON)" icon at the top-bar
 
 Then fill opened `.vscode/settings.json`:
 
-```json
+```jsonc
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
