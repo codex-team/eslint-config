@@ -203,7 +203,6 @@ export default [
 
       '@stylistic/object-curly-newline': ['error', {
         consistent: true,
-        ObjectExpression: 'always',
       }],
       '@stylistic/object-property-newline': ['error', {
         allowAllPropertiesOnSameLine: false,
