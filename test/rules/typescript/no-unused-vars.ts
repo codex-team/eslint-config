@@ -1,0 +1,1 @@
+let someVar: string;

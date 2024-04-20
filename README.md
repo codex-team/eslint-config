@@ -1,45 +1,64 @@
-# CodeX basic ESLint configuration
+# CodeX ESLint configuration
+
+- [Flat config](https://eslint.org/docs/latest/use/configure/configuration-files), ESLint 9
+- JavaScript and TypeScript configs
+- Vue.js config (TS)
+- Node.js
+- Codestyle config
+- JSDoc configs for JS and TS
+- Global variables list
+- Gitignore support
 
 ## Install
 
 Add package to your dev-dependencies using npm or yarn:
 
 ```bash
-$ npm i -D eslint-config-codex eslint
-
-$ yarn add -D eslint-config-codex eslint
+yarn add -D eslint-config-codex eslint
 ```
 
-## Usage in JavaScript
+## Usage
 
-Add `.eslintrc` file to your project's root if you don't have it.
+Add following lines to your `eslint.config.mjs`:
 
-```bash
-npm init @eslint/config
+```js
+import CodeX from 'eslint-config-codex'
+
+export default [
+  ...CodeX,
+  // your customization
+]
 ```
 
-Then add the `extends` section to there:
+## VSCode suport
 
-```json
-{
-  "extends": [
-    "codex"
+Open `Code` / `Settings`, find "Open Settings (JSON)" icon at the top-bar
+
+Then fill opened `.vscode/settings.json`:
+
+```jsonc
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
   ]
-}
 ```
 
-## Usage in TypeScript
-
-1. Follow instructions for JavaScript
-2. Extend from `codex/ts` instead of `codex`
-
-```json
-{
-  "extends": [
-    "codex/ts"
-  ]
-}
-```
 
 ## Troubleshooting
 
