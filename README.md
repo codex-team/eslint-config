@@ -3,6 +3,7 @@
 - [Flat config](https://eslint.org/docs/latest/use/configure/configuration-files), ESLint 9
 - JavaScript and TypeScript configs
 - Vue.js config (TS)
+- Node.js
 - Codestyle config
 - JSDoc configs for JS and TS
 - Global variables list
