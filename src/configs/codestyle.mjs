@@ -251,7 +251,6 @@ export default [
       camelcase: ['error', {
         properties: 'always',
       }],
-      'multiline-comment-style': ['error'],
       'one-var': ['error', 'never'],
       curly: ['error', 'all'],
     },

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true /** Ensure that nobody can accidentally use this config for a build */
+  },
+  "include": [
+    "**/*.ts",
+  ]
+}

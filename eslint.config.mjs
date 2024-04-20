@@ -4,10 +4,10 @@ import JsDoc from './src/configs/jsdoc.mjs';
 import CodeStyle from './src/configs/codestyle.mjs';
 import Vue from './src/configs/vue.mjs';
 import Globals from './src/configs/globals.mjs';
-import gitignore from 'eslint-config-flat-gitignore';
+import Ignore from './src/configs/ignore.mjs';
 
 export default [
-  gitignore(),
+  ...Ignore,
   ...Globals,
   ...CodeStyle,
   ...JavaScript,
