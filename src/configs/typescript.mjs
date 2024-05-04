@@ -163,7 +163,7 @@ export default [
         },
       },
       /**
-       * Property names that satisfy regex are used without any format rules
+       *  Allows "2xx" (and similar) as a property name, used in the API response schema
        */
       {
         selector: 'property',
