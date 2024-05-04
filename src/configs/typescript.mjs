@@ -150,7 +150,30 @@ export default [
         format: [
           'PascalCase',
         ],
-      }],
+      },
+      /**
+       * Use camelCase for property names that dont satisfy regex
+       */
+      {
+        selector: 'property',
+        format: ['camelCase'],
+        filter: {
+          regex: '^(?!(2xx|2[0-9][0-9]|application/json)$).*',
+          match: true,
+        },
+      },
+      /**
+       *  Allows "2xx" (and similar) as a property name, used in the API response schema
+       */
+      {
+        selector: 'property',
+        format: null,
+        filter: {
+          regex: '^(2xx|2[0-9][0-9]|application/json)$',
+          match: true,
+        },
+      },
+      ],
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
