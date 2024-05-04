@@ -151,6 +151,9 @@ export default [
           'PascalCase',
         ],
       },
+      /**
+       * Use camelCase for property names that dont satisfy regex
+       */
       {
         selector: 'property',
         format: ['camelCase'],
@@ -159,6 +162,9 @@ export default [
           match: true,
         },
       },
+      /**
+       * Property names that satisfy regex are used without any format rules
+       */
       {
         selector: 'property',
         format: null,
