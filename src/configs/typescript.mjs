@@ -150,7 +150,24 @@ export default [
         format: [
           'PascalCase',
         ],
-      }],
+      },
+      {
+        selector: 'property',
+        format: ['camelCase'],
+        filter: {
+          regex: '^(?!(2xx|2[0-9][0-9]|application/json)$).*',
+          match: true,
+        },
+      },
+      {
+        selector: 'property',
+        format: null,
+        filter: {
+          regex: '^(2xx|2[0-9][0-9]|application/json)$',
+          match: true,
+        },
+      },
+      ],
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
